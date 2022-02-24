@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="kek:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/kek_jar</output-path>
+    <root id="archive" name="ProjekatSlaven.jar">
+      <element id="module-output" name="ProjekatSlaven" />
+    </root>
+  </artifact>
+</component>
