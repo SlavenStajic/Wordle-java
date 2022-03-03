@@ -2,8 +2,8 @@ package com.company;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class randomrijec {
-    private String[] lista = {"labud","kuvar","kruna","lampa","limun","motor","novac","oblak","ormar","palma"
+public class RandomWord {
+    private String[] list = {"labud","kuvar","kruna","lampa","limun","motor","novac","oblak","ormar","palma"
             ,"atlas"
             ,"crkva"
             ,"dabar"
@@ -55,15 +55,9 @@ public class randomrijec {
             ,"lasta"
             ,"kolut"};
 
-    public String rijec(){
-        int broj = ThreadLocalRandom.current().nextInt(0,60);
-
-        System.out.println(lista[broj]);
-
-        return lista[broj];
-
-
-
+    public String word(){
+        int number = ThreadLocalRandom.current().nextInt(0,60);
+        System.out.println(list[number]);
+        return list[number];
     }
-
 }

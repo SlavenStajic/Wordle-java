@@ -1,37 +1,25 @@
 package com.company;
 
 import javax.swing.*;
-import javax.swing.text.AbstractDocument;
-import javax.swing.text.BadLocationException;
-import javax.swing.text.DocumentFilter;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class TextField {
-    Dimension dimenzija;
+    Dimension dimension;
     Font font;
 
     public TextField(){
-        this.dimenzija = new Dimension(60,60);
+        this.dimension = new Dimension(60,60);
         this.font = new Font("Serif",Font.BOLD,50);
-
     }
 
-    public JTextField createnew(){
+    public JTextField createNew(){
         JTextField field = new JTextField();
 
-
-        field.setPreferredSize(dimenzija);
+        field.setPreferredSize(dimension);
         field.setHorizontalAlignment(JTextField.CENTER);
         field.setFont(font);
-
-
-
-
-
         field.setEditable(false);
         field.addKeyListener(new KeyAdapter() {
             public void keyTyped(KeyEvent e) {
@@ -46,9 +34,6 @@ public class TextField {
                 }
             }
         });
-
         return field;
     }
-
-
 }

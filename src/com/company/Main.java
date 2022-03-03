@@ -1,10 +1,6 @@
 package com.company;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import javax.swing.ImageIcon;
 
 public class Main {
 
@@ -12,8 +8,5 @@ public class Main {
 
        UserInterface ui = new UserInterface();
        SwingUtilities.invokeLater(ui);
-
-
-
     }
 }
